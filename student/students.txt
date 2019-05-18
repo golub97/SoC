@@ -1,8 +1,0 @@
-Marko 100 23
-Nikola 89 50
-Drogba 100 2
-Risto 89 55
-Bane 100 23
-Nevesinje 89 53
-Milan 100 23
-Toskic 89 55
