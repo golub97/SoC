@@ -12,7 +12,7 @@ SC_MODULE(Fsm)
 public:
 	SC_HAS_PROCESS(Fsm);
 
-	Fsm(sc_module_name, State);
+	Fsm(sc_module_name, State s);
 
 protected:
 	void print(const char *str);
