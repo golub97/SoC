@@ -5,7 +5,7 @@
 using namespace sc_core;
 using namespace std;
  
-fibb::fibb(sc_core::sc_module_name name)
+fibb::fibb(sc_core::sc_module_name name) : sc_module(name)
 {
 	SC_THREAD(generate_number);
 	SC_THREAD(print_number); 

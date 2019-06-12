@@ -3,11 +3,10 @@
 using namespace sc_core;
 using namespace std;
 
-nuc::nuc(sc_core::sc_module_name name, sc_core::sc_event* s00) 
+nuc::nuc(sc_core::sc_module_name name, sc_core::sc_event* s00) : sc_module(name), s0(s00)
 {
 	SC_THREAD(process);
 	state = inactive;
-	s0 = s00;
 }
 
 int nuc::counter = 0;

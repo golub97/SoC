@@ -6,7 +6,7 @@
 using namespace sc_core;
 using namespace std;
 
-lotto::lotto(sc_core::sc_module_name name)
+lotto::lotto(sc_core::sc_module_name name) : sc_module(name)
 {
 	SC_THREAD(lotto_combination);
 	SC_THREAD(first_player);

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Fsm::Fsm(sc_module_name name, State s) 
+Fsm::Fsm(sc_module_name name, State s) : sc_module(name), state(s)
 {
 	SC_METHOD(fsm);	
 	 sensitive << a << b;
@@ -10,9 +10,6 @@ Fsm::Fsm(sc_module_name name, State s)
 	SC_METHOD(ab);
 	 dont_initialize();
 	 sensitive << s0;
-
-	state = s;
-
 }
 
 void Fsm::print(const char *str)

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Door::Door(sc_module_name)
+Door::Door(sc_module_name name) : sc_module(name), state(A) 
 {
 	SC_METHOD(door);
 	 sensitive << s1;
@@ -10,8 +10,6 @@ Door::Door(sc_module_name)
 	SC_METHOD(send_event_s1);
 	 dont_initialize();
 	 sensitive << s0;
-
-	state = A;
 }
 
 void Door::print(const char *str)

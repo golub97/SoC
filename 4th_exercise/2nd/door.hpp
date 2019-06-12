@@ -16,7 +16,7 @@ public:
 	
 	sc_event s0, s1;
 protected:
-	void print(const char *str);
+	void print(const char *);
 
 	State state;	
 

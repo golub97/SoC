@@ -12,9 +12,9 @@ SC_MODULE(Fsm)
 public:
 	SC_HAS_PROCESS(Fsm);
 
-	Fsm(sc_module_name, State s);
+	Fsm(sc_module_name, State );
 protected:
-	void print(const char *str);
+	void print(const char *);
 
 	State state;
 	sc_event a, b, s0;
