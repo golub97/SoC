@@ -1,4 +1,4 @@
-#ifndef DPP_HPPg
+#ifndef DPP_HPP
 #define DPP_HPP
 
 #include <systemc>
